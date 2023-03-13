@@ -1,0 +1,11 @@
+apiVersion: sample.io/v1alpha1
+kind: GatewayClassConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: gatewayclassconfig
+    app.kubernetes.io/instance: sample-gatewayclassconfig
+    app.kubernetes.io/part-of: sample-gateway-manager
+    app.kubernetes.io/managed-by: sample-gateway-manager
+  name: sample-gatewayclassconfig
+spec:
+  foo: bar

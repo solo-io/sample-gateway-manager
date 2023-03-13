@@ -1,0 +1,15 @@
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: Gateway
+metadata:
+  labels:
+    app.kubernetes.io/name: gateway
+    app.kubernetes.io/instance: sample-gateway
+    app.kubernetes.io/part-of: sample-gateway-manager
+    app.kubernetes.io/managed-by: sample-gateway-manager
+  name: sample-gateway
+spec:
+  gatewayClassName: sample-gatewayclass
+  listeners:
+    - name: http
+      protocol: HTTP
+      port: 80

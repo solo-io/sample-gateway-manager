@@ -1,0 +1,11 @@
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: GatewayClass
+metadata:
+  labels:
+    app.kubernetes.io/name: gatewayclass
+    app.kubernetes.io/instance: sample-gatewayclass
+    app.kubernetes.io/part-of: sample-gateway-manager
+    app.kubernetes.io/managed-by: sample-gateway-manager
+  name: sample-gatewayclass
+spec:
+  controllerName: sample.io/gateway-manager
